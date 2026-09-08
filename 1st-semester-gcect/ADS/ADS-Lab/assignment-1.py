@@ -185,12 +185,6 @@ def generate_operations(n, m, seed=42):
             else:
                 operations.append(("union", x, y))
 
-                # We don't know whether x and y are currently
-                # in different sets until execution.
-                #
-                # To ensure the generated sequence eventually
-                # reaches one set, this is handled during execution.
-
         else:
             # Once only one set remains,
             # all remaining operations MUST be find operations.
